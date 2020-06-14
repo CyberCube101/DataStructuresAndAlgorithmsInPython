@@ -42,7 +42,7 @@ class Scoreboard:
 
         good = self.n < len(self.board) or score > self.board[-1].get_score()
         if good:
-            if self.n < len(self.board):  # no socre will drop out
+            if self.n < len(self.board):  # no score will drop out
                 self.n += 1  # overall number increases
             # shift lower score right to make room for new entry
             j = self.n - 1
