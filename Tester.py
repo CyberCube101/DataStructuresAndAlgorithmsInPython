@@ -1,2 +1,3 @@
-colour = ['red', 'blue', 'green']
-print(colour[0])
+Array_Queue = ['John', 'David', 'Emily']
+
+print(Array_Queue.pop(0))
