@@ -24,7 +24,7 @@ class DynamicArray:
         self._n += 1
 
     def _resize(self, c):
-        B = self._make_array(c)
+        B = self._make_array(c)  # new bigger array
         for k in range(self._n):
             B[k] = self._A[k]
         self._A = B  # use the bigger array
