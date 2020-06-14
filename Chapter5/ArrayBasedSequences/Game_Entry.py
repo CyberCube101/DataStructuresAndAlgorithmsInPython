@@ -34,7 +34,7 @@ class Scoreboard:
     def __str__(self):
         return '\n'.join(str(self.board[j] for j in range(self.n)))
 
-    def add(self, entry):
+    def add(self, entry):  # passing the GameEntry instance as entry
         score = entry.get_score()  # consider adding entry to high score
 
         # now we check to see if entry qualifies to be added to the board. yes if board not full or is higher than
@@ -50,3 +50,9 @@ class Scoreboard:
                 self.board[j] = self.board[j - 1]
                 j -= 1
             self.board[j] = entry
+
+
+ge1 = GameEntry('adam', 10)
+sb1 = Scoreboard()
+sb1.add(ge1)
+print(str(sb1))
