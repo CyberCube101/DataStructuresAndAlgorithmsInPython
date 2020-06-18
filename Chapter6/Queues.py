@@ -1,4 +1,4 @@
-'''first into first out FIFO, but here we cannot use pop(0) as is this O(n)'''
+''' First into first out FIFO, but here we cannot use pop(0) as is this O(n) '''
 
 from queue import Empty
 
