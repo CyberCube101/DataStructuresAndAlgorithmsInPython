@@ -14,14 +14,14 @@ class StackArray:
         return self.data.pop()
 
 
-def reverse(alist):
+def reverse(a_list):
     S = StackArray()
-    for i in range(len(alist)):
-        S.push(alist[i])
-    for j in range(len(alist)):
-        alist[j] = S.pop()
-    print(alist)
+    for i in range(len(a_list)):
+        S.push(a_list[i])
+    for j in range(len(a_list)):
+        a_list[j] = S.pop()
+    print(a_list)
 
 
-mylist = [3, 6, 9, 12, 15]
-reverse(mylist)
+my_list = [3, 6, 9, 12, 15]
+reverse(my_list)
